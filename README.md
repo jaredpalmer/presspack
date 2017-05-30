@@ -116,3 +116,5 @@ new BrowserSyncPlugin({
         └── camelCase.js         # Helper function for Router, DO NOT TOUCH
 ```
 
+#### Author
+- Jared Palmer [@jaredpalmer](https://twitter.com/jaredpalmer)
