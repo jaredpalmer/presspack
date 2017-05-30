@@ -1,0 +1,31 @@
+{
+  "name": "presspack",
+  "version": "0.0.1",
+  "description": "Wordpress, Docker, Webpack, Win.",
+  "scripts": {
+    "start": "NODE_ENV=development node ./scripts/start.js",
+    "build": "NODE_ENV=production node ./scripts/build.js",
+    "postinstall": "npm run build"
+  },
+  "author": "jaredpalmer",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "assets-webpack-plugin": "^3.5.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "browser-sync": "^2.18.8",
+    "browser-sync-webpack-plugin": "^1.1.4",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  }
+}

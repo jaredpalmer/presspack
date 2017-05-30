@@ -1,0 +1,16 @@
+{
+  "name": "palmerhq/presspack",
+  "description": "Minimalist wordpress theme",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "wpackagist-plugin/advanced-custom-fields": "4.4.11",
+    "wpackagist-plugin/members": "1.1.3",
+    "wpackagist-plugin/acf-to-rest-api": "2.2.1",
+    "roots/soil": "3.7.1"
+  }
+}

@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $sans;
+}
+
+a {
+    color: #3897f0;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
