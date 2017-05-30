@@ -65,6 +65,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/themes/advanced-topics/customizer-api/#theme-support-in-sidebars
      */
     // add_theme_support('customize-selective-refresh-widgets');
+
+
 }, 20);
 
 
@@ -90,4 +92,22 @@ function get_post_for_url($data)
     $request    = new WP_REST_Request('GET', "/wp/v2/{$postType}s/{$postId}");
     $request->set_url_params(array('id' => $postId));
     return $controller->get_item($request);
+}
+
+add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
+
+// Add page slug to body class, love this - Credit: Starkers Wordpress Theme
+function add_slug_to_body_class($classes) {
+    global $post;
+    if (is_home()) {
+        $key = array_search('blog', $classes);
+        if ($key > -1) {
+            unset($classes[$key]);
+        }
+    } elseif (is_page()) {
+        $classes[] = sanitize_html_class($post->post_name);
+    } elseif (is_singular()) {
+        $classes[] = sanitize_html_class($post->post_name);
+    }
+    return $classes;
 }
