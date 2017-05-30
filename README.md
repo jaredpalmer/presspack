@@ -2,6 +2,16 @@
 
 > 'cuz sometimes, you just have to use Wordpress.
 
+## Features
+
+- Modern JavaScript through Webpack
+- Live reload via BrowserSync
+- SCSS support
+- Easy dev environments with Docker Compose
+- Stateless, immutable plugin management via Composer
+- Helpful HTML5 Router for firing JS based on Wordpress page slug.
+- Nothing else.
+
 ## Requirements
 
 - Node.js
@@ -55,8 +65,8 @@ modify `ports`.
  ...
 ```
 
-If you want to change the port you develop (the default is 4000), then open
-[`scripts/webpack.config.js`](scripts/webpack.config.js#L119) and 
+If you want to change the port you develop on (the default is 4000), then open
+[`scripts/webpack.config.js`](scripts/webpack.config.js#L119) and modify
 `BrowserSyncPlugin`'s `port` option. If you changed the wordpress port above,
 be sure to also change `proxy` accordingly. Don't forget the trailing slash.
 
@@ -74,7 +84,7 @@ new BrowserSyncPlugin({
 ...
 ```
 
-# Project Structure
+## Project Structure
 
 ```bash
 .
@@ -105,3 +115,4 @@ new BrowserSyncPlugin({
         ├── Router.js            # HTML5 Router, DO NOT TOUCH
         └── camelCase.js         # Helper function for Router, DO NOT TOUCH
 ```
+
