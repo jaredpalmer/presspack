@@ -1,6 +1,6 @@
 # Presspack
 
-> 'cuz sometimes, you just have to use Wordpress.
+> Make Wordpress theme development great again.
 
 ## Features
 
