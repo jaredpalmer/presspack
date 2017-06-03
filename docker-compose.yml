@@ -16,7 +16,7 @@ services:
       - db
     image: wordpress:4.7.5-apache
     volumes:
-      - ".:/var/www/html/wp-content/themes/wordpress-palmer"
+      - ".:/var/www/html/wp-content/themes/presspack"
       - "./wp-content/plugins:/var/www/html/wp-content/plugins"
       - "./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini"
     links:
