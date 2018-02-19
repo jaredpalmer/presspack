@@ -98,8 +98,8 @@ new BrowserSyncPlugin({
 ├── package.json                 # Node.js dependencies
 ├── page.php  
 ├──scripts                       # Build / Dev Scripts
-│   ├── build.js                 # Start task
-│   ├── start.js                 # Build task
+│   ├── build.js                 # Build task
+│   ├── start.js                 # Start task
 │   └── webpack.config.js        # Webpack configuration   
 └──src
     ├── index.js                 # JavaScript entry point
