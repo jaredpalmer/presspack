@@ -710,10 +710,6 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
-bf-solid@^2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/bf-solid/-/bf-solid-2.6.2.tgz#8b2f266b94fb16f341037df9587010af9eb5c585"
-
 big.js@^3.1.3:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.1.3.tgz#4cada2193652eb3ca9ec8e55c9015669c9806978"
@@ -1008,6 +1004,12 @@ clap@^1.0.9:
   resolved "https://registry.yarnpkg.com/clap/-/clap-1.1.3.tgz#b3bd36e93dd4cbfb395a3c26896352445265c05b"
   dependencies:
     chalk "^1.1.3"
+
+clean-webpack-plugin@^0.1.19:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/clean-webpack-plugin/-/clean-webpack-plugin-0.1.19.tgz#ceda8bb96b00fe168e9b080272960d20fdcadd6d"
+  dependencies:
+    rimraf "^2.6.1"
 
 cliui@^2.1.0:
   version "2.1.0"

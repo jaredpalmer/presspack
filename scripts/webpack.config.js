@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const AssetsPlugin = require('assets-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const path = require('path');
@@ -81,6 +82,7 @@ module.exports = {
     ],
   },
   plugins: [
+    !DEV && new CleanWebpackPlugin(['build']),
     new ExtractTextPlugin(DEV ? 'bundle.css' : 'bundle.[hash:8].css'),
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
