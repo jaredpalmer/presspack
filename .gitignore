@@ -4,3 +4,4 @@ build
 wp-content
 vendor
 *.log
+.idea
