@@ -121,7 +121,8 @@ new BrowserSyncPlugin({
 docker exec -it host_db_1 /usr/bin/mysqldump -u username -ppassword database_name > backup.sql
 ```
 
-##RESTORE
+## RESTORE
+
 ```aidl
 docker exec -i host_db_1 /usr/bin/mysqldump -u username -ppassword database_name < backup.sql
 ```
