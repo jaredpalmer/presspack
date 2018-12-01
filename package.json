@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Wordpress, Docker, Webpack, Win.",
   "scripts": {
-    "start": "NODE_ENV=development node ./scripts/start.js",
-    "build": "NODE_ENV=production node ./scripts/build.js",
+    "start": "cross-env NODE_ENV=development node ./scripts/start.js",
+    "build": "cross-env NODE_ENV=production node ./scripts/build.js",
     "postinstall": "npm run build"
   },
   "author": "jaredpalmer",
@@ -20,6 +20,7 @@
     "browser-sync": "^2.18.8",
     "browser-sync-webpack-plugin": "^1.1.4",
     "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "friendly-errors-webpack-plugin": "^1.6.1",
