@@ -1,6 +1,6 @@
 {
   "name": "palmerhq/presspack",
-  "description": "Minimalist wordpress theme",
+  "description": "Minimalist WordPress theme",
   "repositories": [
     {
       "type": "composer",

@@ -1,6 +1,6 @@
 # Presspack
 
-> Make Wordpress theme development great again.
+> Make WordPress theme development great again.
 
 ## Features
 
@@ -9,7 +9,7 @@
 - SCSS support
 - Easy dev environments with Docker Compose
 - Stateless, immutable plugin management via Composer
-- Helpful HTML5 Router for firing JS based on Wordpress page slug.
+- Helpful HTML5 Router for firing JS based on WordPress page slug.
 - Nothing else.
 
 ## Requirements
@@ -52,9 +52,9 @@ do not need to bump any enqueued asset versions in `functions.php`.
 
 ## Changing ports
 
-There are two ports involved, the port of the dockerized wordpress instance, 
+There are two ports involved, the port of the dockerized WordPress instance, 
 and the port the Browser Sync runs on. To change the port of the dockerized 
-wordpress instance go into [`docker-compose.yml`](docker-compose.yml#L25) and 
+WordPress instance go into [`docker-compose.yml`](docker-compose.yml#L25) and 
 modify `ports`. 
 
 ```yml
@@ -67,7 +67,7 @@ modify `ports`.
 
 If you want to change the port you develop on (the default is 4000), then open
 [`scripts/webpack.config.js`](scripts/webpack.config.js#L119) and modify
-`BrowserSyncPlugin`'s `port` option. If you changed the wordpress port above,
+`BrowserSyncPlugin`'s `port` option. If you changed the WordPress port above,
 be sure to also change `proxy` accordingly. Don't forget the trailing slash.
 
 ```js
