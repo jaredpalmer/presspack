@@ -116,12 +116,18 @@ new BrowserSyncPlugin({
         └── camelCase.js         # Helper function for Router, DO NOT TOUCH
 ```
 
-## BACKUP
+## Local Database Backup
+
+Here's how to dump your local database with Docker into a `.sql` file
+
 ```aidl
 docker exec -it host_db_1 /usr/bin/mysqldump -u username -ppassword database_name > backup.sql
 ```
 
-## RESTORE
+## Local Database Restore
+
+Restore a previous database backup
+
 ```aidl
 docker exec -i host_db_1 /usr/bin/mysqldump -u username -ppassword database_name < backup.sql
 ```
