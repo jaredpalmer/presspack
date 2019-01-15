@@ -2,6 +2,22 @@
 
 > Make WordPress theme development great again.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Getting Started](#getting-started)
+- [Developing Locally](#developing-locally)
+- [Building for Production](#building-for-production)
+- [Changing ports](#changing-ports)
+- [Project Structure](#project-structure)
+- [Local Database Backup](#local-database-backup)
+- [Local Database Restore](#local-database-restore)
+- [Author](#author)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Features
 
 - Modern JavaScript through Webpack
@@ -21,24 +37,27 @@
 - Docker Compose
 
 ## Getting Started
+
 ```bash
 git clone git@github.com:jaredpalmer/presspack.git
 yarn install
 composer install # if you want plugins ( not required )
-docker-compose up 
+docker-compose up
 ```
 
 ## Developing Locally
+
 To work on the theme locally, open another window/tab in terminal and run:
 
 ```bash
 yarn start
 ```
 
-This will open a browser, watch all files (php, scss, js, etc) and reload the 
-browser when you press save. 
+This will open a browser, watch all files (php, scss, js, etc) and reload the
+browser when you press save.
 
 ## Building for Production
+
 To create an optimized production build, run:
 
 ```bash
@@ -49,13 +68,12 @@ This will minify assets, bundle and uglify javascript, and compile scss to css.
 It will also add cachebusting names to then ends of the compiled files, so you
 do not need to bump any enqueued asset versions in `functions.php`.
 
-
 ## Changing ports
 
-There are two ports involved, the port of the dockerized WordPress instance, 
-and the port the Browser Sync runs on. To change the port of the dockerized 
-WordPress instance go into [`docker-compose.yml`](docker-compose.yml#L25) and 
-modify `ports`. 
+There are two ports involved, the port of the dockerized WordPress instance,
+and the port the Browser Sync runs on. To change the port of the dockerized
+WordPress instance go into [`docker-compose.yml`](docker-compose.yml#L25) and
+modify `ports`.
 
 ```yml
 # docker-compose.yml
@@ -75,7 +93,7 @@ be sure to also change `proxy` accordingly. Don't forget the trailing slash.
 ...
 new BrowserSyncPlugin({
   notify: false,
-  host: 'localhost', 
+  host: 'localhost',
   port: 4000, // this is the port you develop on. Can be anything.
   logLevel: 'silent',
   files: ['./*.php'],
@@ -96,16 +114,16 @@ new BrowserSyncPlugin({
 ├── header.php
 ├── index.php
 ├── package.json                 # Node.js dependencies
-├── page.php  
+├── page.php
 ├──scripts                       # Build / Dev Scripts
 │   ├── build.js                 # Build task
 │   ├── start.js                 # Start task
-│   └── webpack.config.js        # Webpack configuration   
+│   └── webpack.config.js        # Webpack configuration
 └──src
     ├── index.js                 # JavaScript entry point
     ├── routes                   # Routes
     │   ├── common.js            # JS that will run on EVERY page
-    │   └── <xxx>.js             # JS that will run on pages with <xxx> slug 
+    │   └── <xxx>.js             # JS that will run on pages with <xxx> slug
     ├── style.scss               # SCSS style entry point
     ├── styles                   # SCSS
     │   ├── _global-vars.scss
@@ -132,5 +150,6 @@ Restore a previous database backup
 docker exec -i host_db_1 /usr/bin/mysqldump -u username -ppassword database_name < backup.sql
 ```
 
-#### Author
+## Author
+
 - Jared Palmer [@jaredpalmer](https://twitter.com/jaredpalmer)
