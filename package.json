@@ -1,7 +1,7 @@
 {
   "name": "presspack",
   "version": "0.0.1",
-  "description": "Wordpress, Docker, Webpack, Win.",
+  "description": "WordPress, Docker, Webpack, Win.",
   "scripts": {
     "start": "cross-env NODE_ENV=development node ./scripts/start.js",
     "build": "cross-env NODE_ENV=production node ./scripts/build.js",
