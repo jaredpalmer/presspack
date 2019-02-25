@@ -3,11 +3,11 @@
     "development": {
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "modules": false,
             "targets": {
-              "ie9": true
+              "ie": "9"
             }
           }
         ]
@@ -16,12 +16,12 @@
     "production": {
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "modules": false,
+            "forceAllTransforms": true,
             "targets": {
-              "ie9": true,
-              "uglify": true
+              "ie": "9"
             }
           }
         ]
