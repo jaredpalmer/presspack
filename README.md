@@ -148,7 +148,7 @@ docker exec -it host_db_1 /usr/bin/mysqldump -u username -ppassword database_nam
 Restore a previous database backup
 
 ```aidl
-docker exec -i host_db_1 /usr/bin/mysqldump -u username -ppassword database_name < backup.sql
+docker exec -i host_db_1 /usr/bin/mysql -u username -ppassword database_name < backup.sql
 ```
 
 ## Author
