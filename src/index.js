@@ -1,4 +1,4 @@
-import jQuery from 'jquery';
+import 'jquery';
 import './style.scss';
 
 import Router from './util/Router';
@@ -13,7 +13,7 @@ const routes = new Router({
   /** All pages */
   common,
   /** Home page */
-  home
+  home,
   /** About Us page, note the change from about-us to aboutUs. */
 });
 

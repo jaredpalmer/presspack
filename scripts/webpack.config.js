@@ -126,7 +126,7 @@ module.exports = {
         host: 'localhost',
         port: 4000,
         logLevel: 'silent',
-        files: ['./*.php'],
+        files: ['./template/*.php'],
         proxy: 'http://localhost:9009/',
       }),
   ].filter(Boolean),

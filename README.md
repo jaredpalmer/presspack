@@ -109,12 +109,13 @@ new BrowserSyncPlugin({
 ├── composer.json                # Compose dependencies (plugins)
 ├── composer.lock                # Composer lock file
 ├── docker-compose.yml           # Docker Compose configuration
-├── footer.php
-├── functions.php
-├── header.php
-├── index.php
 ├── package.json                 # Node.js dependencies
-├── page.php
+├──template                      # Wordpress PHP theme files
+│   ├── footer.php
+│   ├── functions.php
+│   ├── header.php
+│   ├── index.php
+│   └── page.php
 ├──scripts                       # Build / Dev Scripts
 │   ├── build.js                 # Build task
 │   ├── start.js                 # Start task
