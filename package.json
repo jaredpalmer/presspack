@@ -10,7 +10,7 @@
   "author": "jaredpalmer",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
