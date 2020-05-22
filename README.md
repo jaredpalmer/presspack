@@ -135,6 +135,12 @@ new BrowserSyncPlugin({
         └── camelCase.js         # Helper function for Router, DO NOT TOUCH
 ```
 
+## Problem with update wordpress or plugins?
+You need to run the `chown` command inside docker container
+```
+RUN chown -R www-data:www-data /var/www
+```
+
 ## Local Database Backup
 
 Here's how to dump your local database with Docker into a `.sql` file
