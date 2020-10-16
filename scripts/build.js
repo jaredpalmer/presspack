@@ -12,16 +12,14 @@ process.on('unhandledRejection', err => {
 const webpack = require('webpack');
 const config = require('./webpack.config');
 
-const clientCompiler = webpack(config);
-
 console.log('[0/1] Creating an optimized production build...');
-compile(config, (err, stats) => {
+compile((err, stats) => {
   handleWebpackErrors(err, stats);
   console.log('[1/1] Build successful!');
 });
 
 // Wrap webpack compile in a try catch.
-function compile(config, cb) {
+function compile(cb) {
   let compiler;
   try {
     compiler = webpack(config);
