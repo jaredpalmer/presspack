@@ -2,21 +2,7 @@
 
 > Make WordPress theme development great again.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Getting Started](#getting-started)
-- [Developing Locally](#developing-locally)
-- [Building for Production](#building-for-production)
-- [Changing ports](#changing-ports)
-- [Project Structure](#project-structure)
-- [Local Database Backup](#local-database-backup)
-- [Local Database Restore](#local-database-restore)
-- [Author](#author)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+[![Discord](https://img.shields.io/discord/769256827007139912?label=%F0%9F%92%AC%20%20join%20us%20on%20discord&style=plastic)](https://discord.com/invite/RevdZTYMzr)
 
 ## Features
 
